@@ -10,6 +10,7 @@ public class Runner
 		animals.add(new Penguin());
 		animals.add(new Bat());
 		animals.add(new Robin());
+		animals.add(new Teacher());
 		Scanner things = new Scanner(System.in);
 		boolean yes = true;
 		while(yes == true)
@@ -17,7 +18,7 @@ public class Runner
 			printAnimals(animals);
 			System.out.println("Please select an animal to see it's info or anything else to leave!");
 			int choice = things.nextInt() - 1;
-			if(choice > 0 && choice < animals.size())
+			if(choice > -1 && choice < animals.size())
 				{
 				animals.get(choice).eat();
 				animals.get(choice).makeNoise();

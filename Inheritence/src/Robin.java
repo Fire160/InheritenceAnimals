@@ -5,6 +5,7 @@ public class Robin extends Bird
 		name = "Robin";
 		food = "worms";
 		}
+	FlightBehavior myFly = (FlightBehavior) new CannotFly();
 	public void makeNoise()
 		{
 		System.out.println("The robin says Wowwie Zowwie Batman!");

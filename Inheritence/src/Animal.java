@@ -2,6 +2,7 @@ public abstract class Animal
 	{
 	protected String name;
 	protected String food;
+	protected FlightBehavior myFly;
 	public abstract void bearYoung();
 	public void eat()
 		{
