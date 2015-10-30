@@ -10,7 +10,7 @@ public class Runner
 		animals.add(new Penguin());
 		animals.add(new Bat());
 		animals.add(new Robin());
-		animals.add(new Teacher());
+		//animals.add(new Teacher());
 		Scanner things = new Scanner(System.in);
 		boolean yes = true;
 		while(yes == true)
@@ -23,6 +23,7 @@ public class Runner
 				animals.get(choice).eat();
 				animals.get(choice).makeNoise();
 				animals.get(choice).bearYoung();
+				animals.get(choice).myFly.flies();;
 				}
 			else
 				{

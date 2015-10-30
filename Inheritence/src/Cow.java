@@ -4,8 +4,9 @@ public class Cow extends Mammal
 		{
 		name = "Cow";
 		food = "grass";
+		myFly = (FlightBehavior) new CannotFly();
 		}
-	FlightBehavior myFly = (FlightBehavior) new CannotFly();
+	
 	public void makeNoise()
 		{
 		System.out.println("The cow says MOOOOOOO!!!!");

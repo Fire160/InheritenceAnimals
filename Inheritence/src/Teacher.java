@@ -3,7 +3,7 @@ public class Teacher extends Mammal
 	public Teacher()
 		{
 		name = "Teacher";
-		food = "Souls";
+		food = "Students";
 		}
 	FlightBehavior myFly = (FlightBehavior) new CannotFly();
 	public void makeNoise()

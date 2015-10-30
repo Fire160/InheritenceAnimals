@@ -4,8 +4,8 @@ public class Bat extends Mammal
 		{
 		name = "Bat";
 		food = "insects";
+		myFly = (FlightBehavior) new CannotFly();
 		}
-	FlightBehavior myFly = (FlightBehavior) new CannotFly();
 	public void makeNoise()
 		{
 		System.out.println("The bat says Mommy?... Daddy?");
